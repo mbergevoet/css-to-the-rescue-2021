@@ -25,3 +25,7 @@ Als extra context kies ik **prefers-color-scheme**. Het ontwerp zoals ik het nu 
 ## Ristricties
 
 En als de twee ristricties wil ik **voldoen aan Level AAA van de WCAG** en wil ik het ontwerp **responsive maken zonder media queries**. Deze kies ik omdat de anderen twee met maar twee kleuren en zonder vormen mij het wel erg onmogelijk maken om het ontwerp dat ik in mijn hoofd heb te kunnen maken. Het zou kunnen dat ik nog kies voor extreme optimalisatie als het te lastig is om mijn ontwerp responsive te maken zonder media queries.
+
+## CSS technieken
+
+Veel flexbox gebruik omdat ik geen media queries ga gebruiken. Verder wil ik ook dingen doen met scroll gedrag en kleine animaties.
