@@ -10,9 +10,13 @@
 
 ## Mijn Plan
 
-Ik kies het **magazine artikel** in HTML om te stylen. Dit wil ik doen in een stijl die me aanspreekt. Dat is 80s cassette artworks van bedrijven als Sony en Polaroid en op grafisch ontwerp met gekleurde vormen uit die tij. Ik heb ook een [moodboard](https://nl.pinterest.com/mbergevoet39/retro-adds-and-colors/) gemaakt op Pintrest. Zie hier onder een compactere versie van het moodboard.
+Ik kies het **magazine artikel** in HTML om te stylen. Dit wil ik doen in een stijl die me aanspreekt. Dat is 80s cassette artworks van bedrijven als Sony en Polaroid en op grafisch ontwerp met gekleurde vormen uit die tij. Ik heb ook een [moodboard](https://nl.pinterest.com/mbergevoet39/retro-adds-and-colors/) gemaakt op Pintrest. Zie hier onder een compactere versie van het moodboard. Ik wil me vooral bezig houden met schuine layouts, typografie en interessant kleurgebruik.
 
 <img src="https://i.imgur.com/l3aNSZ2.png?raw=true"/>
+
+## Schetsen
+
+> TODO
 
 ## Context
 
