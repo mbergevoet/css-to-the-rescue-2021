@@ -16,7 +16,10 @@ Ik kies het **magazine artikel** in HTML om te stylen. Dit wil ik doen in een st
 
 ## Schetsen
 
-> TODO
+<img src="https://i.imgur.com/v0Ki7gk.jpg?raw=true"/>
+<img src="https://i.imgur.com/TNZzAbp.jpg?raw=true"/>
+<img src="https://i.imgur.com/PgrjQms.jpg?raw=true"/>
+<img src="https://i.imgur.com/5v8a4Sz.jpg?raw=true"/>
 
 ## Context
 

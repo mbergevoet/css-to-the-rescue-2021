@@ -129,15 +129,155 @@ table {
 
 /* Reset styles end */
 
+@font-face {
+	font-family: 'ZurichBlackItalic';
+	src: url('../fonts/Zurich\ Black\ Italic.ttf');
+}
+
+@font-face {
+	font-family: 'HelveticaNowBold';
+	src: url('../fonts/Helvetica\ NowText\ Bold.ttf');
+}
+
 :root {
+	--offwhite: #e9e9e3;
 	--grey: #aaaaaa;
-	--red: #d74544;
+	--red1: #d74544;
+	--red2: #db3e3e;
+	--red3: #862a35;
 	--yellow: #f5ae38;
-	--green: #26a285;
+	--green1: #26a285;
+	--green2: #19ce61;
 	--lightblue: #2cb3b9;
-	--darkblue: #636397;
+	--bluepruple: #636397;
+	--darkblue: #175089;
 }
 
 html {
 	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+header,
+main {
+	background: var(--offwhite);
+}
+
+header {
+	padding: 50vh 15vw 30vh;
+	z-index: -1;
+	overflow-y: hidden;
+	position: relative;
+}
+
+header h1 {
+	font-family: 'ZurichBlackItalic', sans-serif;
+	font-size: calc(1em + 5vw);
+	color: var(--darkblue);
+	transform-origin: left center;
+	transform: rotate(-30deg);
+	position: relative;
+	z-index: 0;
+}
+
+header h1::before {
+	content: '';
+	height: 0.7em;
+	width: 120vw;
+	background: var(--darkblue);
+	position: absolute;
+	left: -50%;
+	bottom: -70%;
+}
+
+header h1::after {
+	content: '';
+	height: 1.2em;
+	width: 120vw;
+	background: var(--red3);
+	position: absolute;
+	left: -50%;
+	bottom: -200%;
+}
+
+header h2 {
+	position: absolute;
+	left: 1em;
+	top: 1em;
+	font-family: 'HelveticaNowBold', sans-serif;
+	font-size: 2.5em;
+	font-weight: 800;
+	transform: rotate(-30deg);
+	color: var(--red3);
+}
+
+header h2::before {
+	content: '';
+	position: absolute;
+	left: -50%;
+	top: 0;
+	height: 2px;
+	width: 10em;
+	background: var(--red3);
+}
+
+header h2::after {
+	content: '';
+	position: absolute;
+	left: -2em;
+	top: 1em;
+	height: 2px;
+	width: 10em;
+	background: var(--red3);
+}
+
+main {
+	width: 100vw;
+	height: auto;
+	font-size: 1rem;
+	background: rgb(22, 20, 23);
+	background: linear-gradient(
+		0deg,
+		rgba(22, 20, 23, 1) 0%,
+		rgba(71, 67, 64, 1) 33%,
+		rgba(209, 202, 188, 1) 100%
+	);
+	z-index: 10;
+}
+
+main div {
+	height: 100%;
+	margin: 0 10vw;
+	padding: 3vw 3vh;
+	background-color: var(--offwhite);
+}
+
+main div h1 {
+	font-size: 1.3em;
+}
+
+img {
+	width: 50%;
+	height: auto;
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+footer {
+	color: var(--offwhite);
+	background-color: black;
+}
+
+footer a {
+	color: var(--offwhite);
 }
