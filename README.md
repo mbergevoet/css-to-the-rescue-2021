@@ -20,7 +20,8 @@ Met dat voorbeeld ben ik aan de slag gegaan.
 <img src="https://i.imgur.com/2gBXo4x.png?raw=true"/>
 <img src="https://i.imgur.com/2HcuzOf.png?raw=true"/>
 
-Ik heb de schuine elementen gepositioneerd met `position: relative` en `position: absolute` en door een `::before` te gebruiken voor de blauwe lijn en een `::after` voor de rode lijn. Het eerste screenshot is de eerste versie en daarna heb ik er verder aan gewerkt door nog dat _NEW!!!_ toe te voegen links boven en door de lijnen met `z-index` achter de main te plaatsen en dus worden afgesneden.
+Ik heb de schuine elementen gepositioneerd met `position: relative` en `position: absolute` en door een `::before` te gebruiken voor de blauwe lijn en een `::after` voor de rode lijn. Het eerste screenshot is de eerste versie en daarna heb ik er verder aan gewerkt door nog dat _NEW!!!_ toe te voegen links boven en door de lijnen met `z-index` achter de main te plaatsen en dus worden afgesneden. <br>
+Ik heb de gekleurde lijnen ook nog proberen te veranderen door de lijnen een SVG path te maken zodat ze aan de ene kant minder breed kunnen zijn dan de anderen zoals ik de achte foto ook te zien is.
 
 ## Plan voor volgende week
 
