@@ -189,6 +189,7 @@ header h1::before {
 	position: absolute;
 	left: -50%;
 	bottom: -70%;
+	transform: scale(2, 0.5, 1);
 }
 
 header h1::after {
@@ -243,7 +244,6 @@ main {
 		rgba(71, 67, 64, 1) 33%,
 		rgba(209, 202, 188, 1) 100%
 	);
-	z-index: 10;
 }
 
 main div {

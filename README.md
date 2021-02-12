@@ -1,10 +1,24 @@
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
+## Demo link
+
+[Go to the live demo of this project](https://mbergevoet.github.io/css-to-the-rescue-2021//)
+
 # Week 4
 
 # Week 3
 
 # Week 2
+
+Deze week heb ik me vooral laten inspireren door mijn pintrest bord. Ik vind de afbeelding die je hier onder vind.
+
+<img src="https://i.imgur.com/zqx8ac4.jpg" width="400"/>
+Met dat voorbeeld ben ik aan de slag gegaan.
+
+<img src="https://i.imgur.com/2gBXo4x.png?raw=true"/>
+<img src="https://i.imgur.com/2HcuzOf.png?raw=true"/>
+
+Ik heb de schuine elementen gepositioneerd met `position: relative` en `position: absolute` en door een `::before` te gebruiken voor de blauwe lijn en een `::after` voor de rode lijn. Het eerste screenshot is de eerste versie en daarna heb ik er verder aan gewerkt door nog dat _NEW!!!_ toe te voegen links boven en door de lijnen met `z-index` achter de main te plaatsen en dus worden afgesneden.
 
 # Week 1
 
