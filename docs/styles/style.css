@@ -166,8 +166,8 @@ main {
 
 header {
 	padding: 50vh 15vw 30vh;
-	z-index: -1;
 	overflow-y: hidden;
+	overflow-x: hidden;
 	position: relative;
 }
 
@@ -179,27 +179,29 @@ header h1 {
 	transform: rotate(-30deg);
 	position: relative;
 	z-index: 0;
+	perspective: 3000px;
 }
 
 header h1::before {
 	content: '';
 	height: 0.7em;
-	width: 120vw;
+	width: 200vw;
 	background: var(--darkblue);
 	position: absolute;
-	left: -50%;
-	bottom: -70%;
-	transform: scale(2, 0.5, 1);
+	left: -150%;
+	bottom: -90%;
+	transform: rotateY(-50deg);
 }
 
 header h1::after {
 	content: '';
 	height: 1.2em;
-	width: 120vw;
+	width: 205vw;
 	background: var(--red3);
 	position: absolute;
-	left: -50%;
-	bottom: -200%;
+	left: -150%;
+	bottom: -240%;
+	transform: rotateY(-52deg);
 }
 
 header h2 {
