@@ -10,6 +10,8 @@
 
 # Week 2
 
+## Voortgang
+
 Deze week heb ik me vooral laten inspireren door mijn pintrest bord. Ik vind de afbeelding die je hier onder vind.
 
 <img src="https://i.imgur.com/zqx8ac4.jpg" width="400"/>
@@ -19,6 +21,10 @@ Met dat voorbeeld ben ik aan de slag gegaan.
 <img src="https://i.imgur.com/2HcuzOf.png?raw=true"/>
 
 Ik heb de schuine elementen gepositioneerd met `position: relative` en `position: absolute` en door een `::before` te gebruiken voor de blauwe lijn en een `::after` voor de rode lijn. Het eerste screenshot is de eerste versie en daarna heb ik er verder aan gewerkt door nog dat _NEW!!!_ toe te voegen links boven en door de lijnen met `z-index` achter de main te plaatsen en dus worden afgesneden.
+
+## Plan voor volgende week
+
+Ik moet nog goed nadenken over de layout van de echte content. Daar ben ik nu mee bezig en ik laat me inspireren door mijn Pintrest bord. Ik wil daarin ook nog heel graag iets doen met parralax scroll en de achtergrond. En ik wil ook nog een Dark theme met aangepaste kleueren die minder hard zijn voor je ogen als het avond of nacht is.
 
 # Week 1
 
