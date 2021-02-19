@@ -8,6 +8,18 @@
 
 # Week 3
 
+## Voortgang
+
+Deze week heb me bezig gehouden met de main van het artikel. Ik had besloten om de tekst op te delen in verschillende divs voor het gemak. Dat werden er uiteindelijk zes. Van de zes "tegels" wilde ik dus elk in een nieuwe stijl maken. Die stijlen waren eigenlijk artworks van verschillende VHS banden merken. Zie de afbeelding hier beneden.
+
+![VHS banden](https://i.imgur.com/4A16urP.jpg)
+
+Om ze een plek te geven gaf plaatste ik ze in een twee koloms grid. De eerste tegel had ik al zo goed als afgemaakt maar ik bedacht me dat het erg lastig zou worden om die ook helemaal responsive te maken omdat de maten die ik gebruikte zo specifiek voor mijn schermgrote golt. Op donderdag had ik een korte ideeën sessie met Vasilis waarin hij me mee hielp met denken over andere mogelijkheiden en interacties. In die sessie heb ik besloten dat ik maar een één koloms grid ging maken en de VHS banden artworks een vaste hoogte en breedte te geven zodat het minder lastig zou worden met responsive maken. Ook heb ik besloten om de artworks zo goed mogelijk na te maken met alleen CSS dus.
+
+## Plan voor volgende week
+
+In de vakantie wil ik zorgen dat alle artworks klaar zijn en ook kijken naar de interacties. Er zal wat tijd in gaan zitten maar ik denk dat het zeker moet lukken om het op tijd af te krijgen.
+
 # Week 2
 
 ## Voortgang

@@ -141,11 +141,14 @@ table {
 
 :root {
 	--offwhite: #e9e9e3;
+	--stalewhite: #f7fbfc;
+	--polaroidewhite: #fbefd5;
 	--grey: #aaaaaa;
-	--red1: #d74544;
-	--red2: #db3e3e;
-	--red3: #862a35;
-	--yellow: #f5ae38;
+	--jvcgrey: #818ca4;
+	--panasonicred: #862a35;
+	--kodakred: #d31124;
+	--kodakyellow: #fbb401;
+	--kodakgold: #867b49;
 	--green1: #26a285;
 	--green2: #19ce61;
 	--lightblue: #2cb3b9;
@@ -197,7 +200,7 @@ header h1::after {
 	content: '';
 	height: 1.2em;
 	width: 205vw;
-	background: var(--red3);
+	background: var(--panasonicred);
 	position: absolute;
 	left: -150%;
 	bottom: -240%;
@@ -212,7 +215,7 @@ header h2 {
 	font-size: 2.5em;
 	font-weight: 800;
 	transform: rotate(-30deg);
-	color: var(--red3);
+	color: var(--panasonicred);
 }
 
 header h2::before {
@@ -222,7 +225,7 @@ header h2::before {
 	top: 0;
 	height: 2px;
 	width: 10em;
-	background: var(--red3);
+	background: var(--panasonicred);
 }
 
 header h2::after {
@@ -232,40 +235,175 @@ header h2::after {
 	top: 1em;
 	height: 2px;
 	width: 10em;
-	background: var(--red3);
+	background: var(--panasonicred);
 }
 
 main {
+	padding: 3vh 0;
 	width: 100vw;
 	height: auto;
 	font-size: 1rem;
-	background: rgb(22, 20, 23);
+	background: var(--stalewhite);
+	height: 100%;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 600px 1fr;
+	grid-template-rows: repeat(6, 1000px);
+	gap: 5em 0%;
+	grid-template-areas:
+		'. one .'
+		'. two .'
+		'. three .'
+		'. four .'
+		'. five .'
+		'. six .';
+}
+
+div,
+section,
+aside {
+	-webkit-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.53);
+	-moz-box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.53);
+	box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.53);
+}
+
+div:nth-child(1) {
+	grid-area: one;
+	background-color: var(--kodakyellow);
+	position: relative;
+}
+
+div:nth-child(1) h2 {
+	color: var(--kodakred);
+	font-weight: 800;
+	font-size: 4em;
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+	position: absolute;
+	left: 1.5em;
+	bottom: 0.5em;
+}
+
+div:nth-child(1) :first-child ~ p,
+div:nth-child(1) :first-child ~ figure {
+	width: 70%;
+	margin: 1rem auto;
+}
+
+/* div:nth-child(1) div:nth-child(2) {
+	width: 100%;
+	height: 27em;
+	clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 90%);
+	position: absolute;
+	background: black;
+}
+
+div:nth-child(1) p:nth-child(3) span {
+	display: block;
+	margin: 15% 0% 20%;
+	font-weight: 800;
+	font-size: 2em;
+	line-height: 1.5em;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: var(--kodakgold);
+	transform: rotate(-10deg);
+	transform-origin: top right;
+}
+
+div:nth-child(1) p:nth-child(3) span::before {
+	content: '';
+	background: var(--kodakgold);
+	position: absolute;
+	top: -10%;
+	width: 80%;
+	height: 10px;
+}
+
+div:nth-child(1) p:nth-child(3) span::after {
+	content: '';
+	background: var(--kodakgold);
+	position: absolute;
+	top: -50%;
+	left: 0;
+	width: 70%;
+	height: 10px;
+} */
+
+div:nth-child(1) figure img {
+	width: 100%;
+}
+
+div:nth-child(2) {
+	grid-area: two;
+	background-color: var(--polaroidewhite);
+}
+
+div:nth-child(3) {
+	grid-area: three;
+	background-color: var(--jvcgrey);
+}
+
+div:nth-child(3) figure img {
+	width: 10%;
+}
+
+aside {
+	grid-area: four;
+	background: rgb(25, 23, 24);
 	background: linear-gradient(
-		0deg,
-		rgba(22, 20, 23, 1) 0%,
-		rgba(71, 67, 64, 1) 33%,
-		rgba(209, 202, 188, 1) 100%
+		180deg,
+		rgba(25, 23, 24, 1) 0%,
+		rgba(71, 67, 64, 1) 35%,
+		rgba(209, 202, 188, 1) 97%
 	);
 }
 
-main div {
-	height: 100%;
-	margin: 0 10vw;
-	padding: 3vw 3vh;
-	background-color: var(--offwhite);
+aside section {
+	color: white;
+	margin: 10em 3em 0;
+	background: rgb(25, 23, 24);
+	background: linear-gradient(
+		0deg,
+		rgba(25, 23, 24, 1) 0%,
+		rgba(71, 67, 64, 1) 35%,
+		rgba(209, 202, 188, 1) 97%
+	);
 }
 
-main div h1 {
-	font-size: 1.3em;
+div:nth-child(5) {
+	grid-area: five;
+	background-color: black;
+	color: var(--stalewhite);
+}
+
+div:nth-child(6) {
+	grid-area: six;
+	color: white;
+	height: 300px;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 40%,
+		rgba(110, 40, 107, 1) 40%,
+		rgba(110, 40, 107, 1) 44%,
+		rgba(197, 49, 107, 1) 45%,
+		rgba(211, 44, 81, 1) 50%,
+		rgba(231, 36, 43, 1) 50%,
+		rgba(231, 36, 43, 1) 55%,
+		rgba(236, 119, 16, 1) 55%,
+		rgba(236, 119, 16, 1) 60%,
+		rgba(157, 164, 165, 1) 60%
+	);
 }
 
 img {
-	width: 50%;
+	width: auto;
 	height: auto;
 }
 
 video {
-	width: 100%;
+	width: 40%;
 	height: auto;
 }
 
@@ -278,8 +416,13 @@ a {
 footer {
 	color: var(--offwhite);
 	background-color: black;
+	padding: 3vw 3vh;
 }
 
 footer a {
 	color: var(--offwhite);
 }
+
+/* @media (prefers-color-scheme:dark){
+
+} */
