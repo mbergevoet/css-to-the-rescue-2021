@@ -1313,6 +1313,12 @@ footer a {
 	color: var(--offwhite);
 }
 
+/* 
+
+Dark Theme styles
+
+*/
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--black: #fff;
@@ -1356,6 +1362,12 @@ footer a {
 		--fujired: rgba(23, 225, 209, 1);
 	}
 }
+
+/* 
+
+Styles to make the page somewhat responsive
+
+*/
 
 @media screen and (max-width: 645px) {
 	main > div:nth-child(1),
