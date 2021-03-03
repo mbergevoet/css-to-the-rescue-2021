@@ -4,9 +4,9 @@
 
 [Go to the live demo of this project](https://mbergevoet.github.io/css-to-the-rescue-2021//)
 
-# Week 4
-
 # Week 3
+
+Ik ben verder gegaan met het implementeren van de artworks op de site. Eerst had ik nog een andere aanpak dus moest ik weer opnieuw beginnen. Uiteindlijk is het me gelukt om er zes te maken. Ten slotte heb ik nog een invert mode toegevoed en animaties die de target selector gebruiken en keyframes
 
 ## Voortgang
 
