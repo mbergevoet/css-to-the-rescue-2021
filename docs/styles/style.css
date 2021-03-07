@@ -1,86 +1,6 @@
 /* Reset all styles */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -89,35 +9,22 @@ video {
 	vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol,
-ul {
+
+ol, ul {
 	list-style: none;
 }
-blockquote,
-q {
+
+blockquote, q {
 	quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -137,6 +44,11 @@ table {
 @font-face {
 	font-family: 'HelveticaNowBold';
 	src: url('../fonts/Helvetica\ NowText\ Bold.ttf');
+}
+
+@font-face {
+	font-family: 'EagerScript';
+	src: url('../fonts/Eager\ Script.ttf');
 }
 
 :root {
@@ -213,14 +125,14 @@ header h1 {
 	transform: rotate(-30deg);
 	position: relative;
 	z-index: 0;
-	perspective: 3000px;
+	perspective: 2000px;
 }
 
 header h1::before,
 header h1::after {
 	content: '';
 	position: absolute;
-	left: -150%;
+	right: -40vw;
 }
 
 header h1::before {
@@ -272,7 +184,46 @@ header h2::after {
 }
 
 main {
-	padding: 3vh 0;
+	background: var(--black);
+}
+
+main > div:nth-child(1) {
+	width: 100vw;
+	background: var(--black);
+}
+
+main > div:nth-child(1) ul:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	background: var(--white);
+	margin: 2em 5em;
+	border-radius: 40px;
+}
+
+main > div:nth-child(1) ul:nth-child(1) li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0.5em 2% 0 2%;
+}
+
+main > div:nth-child(1) ul:nth-child(1) li:not(:last-child) {
+	border-bottom: 2px solid var(--panasonicred);
+}
+main > div:nth-child(1) ul:nth-child(1) li:last-child {
+	margin-bottom: 0.2em;
+}
+
+main > div:nth-child(1) ul:nth-child(1) li a {
+	text-decoration: none;
+	color: var(--phillipsblue);
+	font-family: 'EagerScript', sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+main > div:nth-child(2) {
+	padding: 10vh 0;
 	width: 100vw;
 	height: auto;
 	font-size: 1rem;
@@ -298,12 +249,7 @@ VHS CASSETTE ART STYLES
 
 */
 
-div:nth-child(1),
-div:nth-child(2),
-div:nth-child(3),
-div:nth-child(4),
-div:nth-child(5),
-div:nth-child(6) {
+main > div:nth-child(2) :is(section:nth-child(1), section:nth-child(2), section:nth-child(3), section:nth-child(4), section:nth-child(5), section:nth-child(6)) {
 	-webkit-box-shadow: 0px 0px 11px 1px var(--trasparentblack);
 	-moz-box-shadow: 0px 0px 11px 1px var(--trasparentblack);
 	box-shadow: 0px 0px 11px 1px var(--trasparentblack);
@@ -315,25 +261,25 @@ KODAK VHS ARTWORK
 
 */
 
-div:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(1) {
 	grid-area: one;
 	background-color: var(--kodakyellow);
 	position: relative;
 	overflow: hidden;
 }
 
-div:nth-child(1) h2:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(1) h2:nth-child(1) {
 	color: var(--kodakred);
 	font-weight: 800;
-	font-size: 12.5em;
+	font-size: 1250%;
 	transform: rotate(-90deg);
 	transform-origin: bottom left;
 	position: absolute;
 	bottom: 1%;
-	left: 1em;
+	left: 33%;
 }
 
-div:nth-child(1) > div:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
 	background: var(--black);
 	background: linear-gradient(
 		180deg,
@@ -370,30 +316,30 @@ div:nth-child(1) > div:nth-child(2) {
 	transform-origin: bottom left;
 }
 
-div:nth-child(1) > div:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
 	position: absolute;
-	top: 78px;
-	left: 32%;
-	padding: 2rem 12rem 0.2rem 10rem;
+	top: 8.2%;
+	left: 30%;
+	padding: 5% 33% 1% 25%;
 	clip-path: polygon(0 100%, 12% 0%, 100% 0%, 100% 100%);
 	background: var(--black);
 	transform: rotate(-25deg);
 	transform-origin: bottom left;
 }
 
-div:nth-child(1) > div:nth-child(3) p {
+main > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) p {
 	color: var(--kodakgold);
 	font-weight: 800;
-	font-size: 6rem;
-	letter-spacing: -7px;
+	font-size: 600%;
+	letter-spacing: -7px; /* calc */
 }
 
-div:nth-child(1) > div:nth-child(4) {
+main > div:nth-child(2) > section:nth-child(1) > div:nth-child(4) {
 	box-shadow: none;
-	width: 100px;
-	height: 250px;
+	width: 20%;
+	height: 35%;
 	position: absolute;
-	top: 40%;
+	top: 38%;
 	left: 85%;
 	background: var(--black);
 	transform: rotate(-25deg);
@@ -401,7 +347,7 @@ div:nth-child(1) > div:nth-child(4) {
 	border-radius: 5px;
 }
 
-div:nth-child(1) > article:nth-child(5) {
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(5) {
 	position: absolute;
 	top: 44%;
 	left: 33%;
@@ -410,35 +356,35 @@ div:nth-child(1) > article:nth-child(5) {
 	text-align: left;
 }
 
-div:nth-child(1) > article:nth-child(5) p:nth-child(1) {
-	font-size: 3em;
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(5) p:nth-child(1) {
+	font-size: 300%;
 }
 
-div:nth-child(1) > article:nth-child(5) p:nth-child(2) {
-	font-size: 6em;
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(5) p:nth-child(2) {
+	font-size: 600%;
 }
 
-div:nth-child(1) > article:nth-child(5) p span {
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(5) p span {
 	text-align: center;
 	display: block;
 }
 
-div:nth-child(1) > article:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(6) {
 	position: absolute;
 	bottom: 2%;
 	left: 40%;
 }
 
-div:nth-child(1) > article:nth-child(6) p:nth-child(1) {
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(6) p:nth-child(1) {
+	font-size: 200%;
 	font-weight: 800;
 	letter-spacing: -2px;
 	padding-right: 3px;
 	border: 2px solid var(--black);
 }
 
-div:nth-child(1) > article:nth-child(6) p:nth-child(2) {
-	font-size: 0.5em;
+main > div:nth-child(2) > section:nth-child(1) > article:nth-child(6) p:nth-child(2) {
+	font-size: 50%;
 	text-align: right;
 }
 
@@ -448,46 +394,48 @@ POLAROID VHS ARTWORK
 
 */
 
-div:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(2) {
 	grid-area: two;
 	background-color: var(--polaroidewhite);
 	position: relative;
 	overflow: hidden;
 }
 
-div:nth-child(2) h2:nth-child(1) {
-	font-size: 5em;
+main > div:nth-child(2) > section:nth-child(2) h2:nth-child(1) {
+	font-size: 500%;
 	font-weight: 800;
-	letter-spacing: -6.5px;
+	letter-spacing: -6.5px; /* calc */
 	margin: 2% 0 0 3%;
 }
 
-div:nth-child(2) > p:nth-child(2) {
-	font-size: 10em;
+main > div:nth-child(2) > section:nth-child(2) > p:nth-child(2) {
+	font-size: 1000%;
 	font-weight: 800;
-	letter-spacing: -13px;
+	letter-spacing: -13px; /* calc */
 	margin: 9% 0 0 2%;
 }
 
-div:nth-child(2) > p:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(2) > p:nth-child(3) {
 	margin: 2% 0 2% 4%;
-	font-size: 1em;
-	letter-spacing: 19px;
+	font-size: 100%;
 	text-transform: uppercase;
 }
 
-div:nth-child(2) > p:nth-child(3) span {
+main > div:nth-child(2) > section:nth-child(2) > p:nth-child(3) span {
 	display: block;
+	letter-spacing: 21px; /* calc */
 }
 
-div:nth-child(2) > p:nth-child(3) span:nth-child(2) {
-	padding-top: 0.8em;
+main > div:nth-child(2) > section:nth-child(2) > p:nth-child(3) span:nth-child(2) {
+	/* padding-top: 0.8em; */
+	padding-top: 2%;
+	letter-spacing: 19px; /* calc */
 }
 
-div:nth-child(2) div:nth-child(4) {
+main > div:nth-child(2) > section:nth-child(2) div:nth-child(4) {
 	box-shadow: none;
 	width: 70%;
-	height: 500px;
+	height: 50%;
 	background: var(--polaroidblue);
 	background: linear-gradient(
 		180deg,
@@ -503,10 +451,10 @@ div:nth-child(2) div:nth-child(4) {
 	);
 }
 
-div:nth-child(2) div:nth-child(5) {
+main > div:nth-child(2) > section:nth-child(2) div:nth-child(5) {
 	box-shadow: none;
-	width: 200px;
-	height: 200px;
+	width: 30%;
+	height: 20%;
 	background: var(--black);
 	border-radius: 15px;
 	transform: rotate(-45deg);
@@ -516,39 +464,37 @@ div:nth-child(2) div:nth-child(5) {
 	left: 80%;
 }
 
-div:nth-child(2) article:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(2) article:nth-child(6) {
 	position: absolute;
 	bottom: 2%;
 	left: 4%;
 }
 
-div:nth-child(2) article:nth-child(6) p:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(2) article:nth-child(6) p:nth-child(1) {
 	font-weight: 800;
-	font-size: 1.7em;
+	font-size: 170%;
 }
 
-div:nth-child(2) article:nth-child(6) p:nth-child(2) {
-	width: 2.2em;
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(2) article:nth-child(6) p:nth-child(2) {
+	font-size: 200%;
 	font-weight: 800;
-	letter-spacing: -2px;
-	padding-right: 3px;
+	letter-spacing: -2px; /* calc */
 	border: 2px solid var(--black);
 }
 
-div:nth-child(2) article:nth-child(6) p:nth-child(3) {
-	font-size: 0.5em;
+main > div:nth-child(2) > section:nth-child(2) article:nth-child(6) p:nth-child(3) {
+	font-size: 50%;
 	text-align: right;
 }
 
-div:nth-child(2) p:nth-child(7) {
+main > div:nth-child(2) > section:nth-child(2) p:nth-child(7) {
 	position: absolute;
 	bottom: 1%;
 	right: 3%;
 	transform: scale(1, 2.5);
 	transform-origin: bottom;
 	font-weight: 800;
-	font-size: 3em;
+	font-size: 300%;
 }
 
 /* 
@@ -557,45 +503,45 @@ JVC ARTWORK STYLES
 
 */
 
-div:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(3) {
 	grid-area: three;
 	background-color: var(--jvcgrey);
 	position: relative;
 	overflow: hidden;
 }
 
-div:nth-child(3) h2:nth-child(1) {
-	font-size: 10em;
+main > div:nth-child(2) > section:nth-child(3) h2:nth-child(1) {
+	font-size: 1000%;
 	font-weight: 800;
-	letter-spacing: -10px;
+	letter-spacing: -10px; /* calc */
 	color: var(--jvcred);
 	text-align: center;
 	position: relative;
 	z-index: 2;
 }
 
-div:nth-child(3) > p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(3) > p:nth-child(2) {
 	margin-top: 10%;
-	font-size: 2.5em;
+	font-size: 250%;
 	text-align: center;
 	color: var(--white);
 	position: relative;
 	z-index: 2;
 }
 
-div:nth-child(3) p:nth-child(2) span {
+main > div:nth-child(2) > section:nth-child(3) p:nth-child(2) span {
 	display: block;
 }
 
-div:nth-child(3) p:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(3) p:nth-child(3) {
 	position: absolute;
 	top: 45%;
 	left: 5%;
-	font-size: 8em;
-	letter-spacing: -10px;
+	font-size: 800%;
+	letter-spacing: -10px; /* calc */
 }
 
-div:nth-child(3) div:nth-child(4) {
+main > div:nth-child(2) > section:nth-child(3) div:nth-child(4) {
 	box-shadow: none;
 	position: absolute;
 	top: 0;
@@ -616,76 +562,77 @@ div:nth-child(3) div:nth-child(4) {
 	z-index: 1;
 }
 
-div:nth-child(3) div:nth-child(5) {
+main > div:nth-child(2) > section:nth-child(3) div:nth-child(5) {
 	position: absolute;
 	top: 55%;
 	right: -3%;
-	height: 175px;
-	width: 50px;
+	height: 17.5%;
+	width: 8.33%;
 	box-shadow: none;
 	clip-path: polygon(0 75%, 0 25%, 100% 0, 100% 100%);
 	background: var(--black);
 }
 
-div:nth-child(3) article:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(6) {
 	margin-top: 57%;
 	text-align: center;
 }
 
-div:nth-child(3) article:nth-child(6) p:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(6) p:nth-child(1) {
 	margin: 0;
+	margin-left: -3%;
 	transform: scale(2, 1);
 	transform-origin: center bottom;
 	font-weight: 800;
-	font-size: 12em;
-	letter-spacing: -10px;
+	font-size: 1200%;
+	letter-spacing: -10px; /* calc */
 }
 
-div:nth-child(3) article:nth-child(6) p:nth-child(2) {
-	font-size: 1.2em;
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(6) p:nth-child(2) {
+	font-size: 120%;
 	text-transform: uppercase;
 	transform: scale(2.5, 1.5);
-	margin-top: -10px;
+	transform-origin: top center ;
+	margin-top: -1.5%;
 }
 
-div:nth-child(3) p:nth-child(7) {
+main > div:nth-child(2) > section:nth-child(3) p:nth-child(7) {
 	position: absolute;
 	bottom: 2%;
 	left: 4%;
-	font-size: 1.5em;
+	font-size: 150%;
 	font-family: none;
 	font-weight: 800;
 	font-style: italic;
 }
 
-div:nth-child(3) p:nth-child(8) {
+main > div:nth-child(2) > section:nth-child(3) p:nth-child(8) {
 	position: absolute;
 	bottom: 2%;
 	right: 18%;
-	font-size: 1.2em;
+	font-size: 120%;
 	font-weight: 800;
 	font-style: italic;
-	letter-spacing: -2px;
+	letter-spacing: -2px; /* calc */
 	text-transform: uppercase;
 }
 
-div:nth-child(3) article:nth-child(9) {
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(9) {
 	position: absolute;
 	bottom: 1%;
 	right: 3%;
 }
 
-div:nth-child(3) article:nth-child(9) p:nth-child(1) {
-	width: 2.2em;
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(9) p:nth-child(1) {
+	font-size: 200%;
 	font-weight: 800;
-	letter-spacing: -2px;
-	padding-right: 3px;
+	padding-right: 5%;
+	letter-spacing: -2px; /* calc */
 	border: 2px solid var(--black);
 }
 
-div:nth-child(3) article:nth-child(9) p:nth-child(2) {
-	font-size: 0.5em;
+main > div:nth-child(2) > section:nth-child(3) article:nth-child(9) p:nth-child(2) {
+	font-size: 50%;
 	text-align: right;
 }
 
@@ -695,7 +642,7 @@ PHILLIPS ARTWORK STYLES
 
 */
 
-div:nth-child(4) {
+main > div:nth-child(2) > section:nth-child(4) {
 	grid-area: four;
 	background: var(--black);
 	background: linear-gradient(
@@ -708,29 +655,29 @@ div:nth-child(4) {
 	overflow: hidden;
 }
 
-div:nth-child(4) h2:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(4) h2:nth-child(1) {
 	color: var(--phillipsbage);
-	margin-top: -15px;
-	margin-bottom: 1em;
-	font-size: 8.3em;
+	margin-top: -1%;
+	margin-bottom: 20%;
+	font-size: 730%;
 	font-weight: 800;
 	text-transform: uppercase;
 }
 
-div:nth-child(4) div:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(4) div:nth-child(2) {
 	box-shadow: none;
 	position: absolute;
 	top: 32%;
 	left: 90%;
-	width: 100px;
-	height: 100px;
+	width: 16%;
+	height: 10%;
 	background: var(--black);
 	border-radius: 4px;
 	transform: rotate(-45deg);
 	transform-origin: top left;
 }
 
-div:nth-child(4) section {
+main > div:nth-child(2) > section:nth-child(4) section:nth-child(3) {
 	color: var(--white);
 	margin: 0 auto;
 	width: 60%;
@@ -751,57 +698,57 @@ div:nth-child(4) section {
 	);
 }
 
-div:nth-child(4) section > * {
+main > div:nth-child(2) > section:nth-child(4) section > * {
 	text-align: center;
 }
 
-div:nth-child(4) section > p:nth-child(1),
-div:nth-child(4) section > p:nth-child(2) {
-	font-size: 2.2em;
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(1),
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(2) {
+	font-size: 220%;
 	font-weight: 800;
 	text-transform: uppercase;
 	color: var(--black);
 }
 
-div:nth-child(4) section > p:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(1) {
 	padding-top: 34%;
 }
 
-div:nth-child(4) section > p:nth-child(2) {
-	letter-spacing: 1.5px;
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(2) {
+	letter-spacing: 1.5px; /* calc */
 	padding-bottom: 80%;
 }
 
-div:nth-child(4) section > p:nth-child(3) {
-	font-size: 7em;
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(3) {
+	font-size: 700%;
 	font-weight: 800;
 	color: var(--phillipsgreen);
-	letter-spacing: -9px;
+	letter-spacing: -9px; /* calc */
 	transform: scale(1, 1.2);
-	margin-bottom: 0.1em;
+	margin-bottom: 3%;
 }
 
-div:nth-child(4) section > p:nth-child(4) {
-	margin: 0 1.65em;
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(4) section > p:nth-child(4) {
+	margin: 0 14.5%;
+	font-size: 200%;
 	font-weight: 800;
 	transform: scale(1, 1.2);
 	background-color: var(--phillipsgreen);
-	margin-bottom: 0.5em;
+	margin-bottom: 5%;
 }
 
-div:nth-child(4) section > article:nth-child(5) p:nth-child(1) {
-	margin: 0 2.5em;
+main > div:nth-child(2) > section:nth-child(4) section > article:nth-child(5) p:nth-child(1) {
+	margin: 0 33%;
 	font-size: 3em;
 	font-weight: 800;
-	letter-spacing: -2px;
+	letter-spacing: -2px; /* calc */
 	padding: 0;
 	border: 2px solid var(--white);
 }
 
-div:nth-child(4) section > article:nth-child(5) p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(4) section:nth-child(3) > article:nth-child(5) p:nth-child(2) {
 	margin: 0 33% 0 0;
-	font-size: 0.7em;
+	font-size: 70%;
 	text-align: right;
 }
 
@@ -811,7 +758,7 @@ BASF ARTWORK STYLES
 
 */
 
-div:nth-child(5) {
+main > div:nth-child(2) > section:nth-child(5) {
 	grid-area: five;
 	background-color: var(--basfbluegrey);
 	color: var(--white);
@@ -819,7 +766,7 @@ div:nth-child(5) {
 	position: relative;
 }
 
-div:nth-child(5) > section:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(1) {
 	margin-top: 5%;
 	margin-left: 10%;
 	box-shadow: none;
@@ -828,9 +775,9 @@ div:nth-child(5) > section:nth-child(1) {
 	align-items: baseline;
 }
 
-div:nth-child(5) > section:nth-child(1) div:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(1) div:nth-child(1) {
 	box-shadow: none;
-	margin-right: 3em;
+	margin-right: 8%;
 	height: 5.5em;
 	width: 5.5em;
 	background: var(--basfredone);
@@ -856,91 +803,92 @@ div:nth-child(5) > section:nth-child(1) div:nth-child(1) {
 	border: 3px solid var(--white);
 }
 
-div:nth-child(5) > section:nth-child(1) h2:nth-child(2) {
-	font-size: 8em;
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(1) h2:nth-child(2) {
+	font-size: 800%;
 	font-weight: 800;
-	letter-spacing: -7px;
+	letter-spacing: -7px; /* calc */
 	transform: none;
 	color: var(--white);
 }
 
-div:nth-child(5) > p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) {
 	margin: 40% 0 0 64%;
 }
 
-div:nth-child(5) > p:nth-child(2) span {
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) span {
 	display: block;
 	text-transform: uppercase;
 	position: relative;
 }
 
-div:nth-child(5) > p:nth-child(2) span:nth-child(1) {
-	font-size: 1.2em;
-	letter-spacing: 8px;
-	margin-bottom: 0.5em;
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) span:nth-child(1) {
+	font-size: 120%;
+	letter-spacing: 8px; /* calc */
+	margin-bottom: 5%;
 }
 
-div:nth-child(5) > p:nth-child(2) span:nth-child(1)::before {
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) span:nth-child(1)::before {
 	content: '';
 	position: absolute;
-	bottom: 120%;
-	height: 4px;
-	width: 8.9em;
+	bottom: 130%;
+	height: 4px; /* calc */
+	width: 80%;
 	background: var(--white);
 }
 
-div:nth-child(5) > p:nth-child(2) span:nth-child(1)::after {
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) span:nth-child(1)::after {
 	content: '';
 	position: absolute;
 	top: 120%;
 	left: 0;
-	height: 4px;
-	width: 8.9em;
+	height: 4px; /* calc */
+	width: 80%;
 	background: var(--white);
 }
 
-div:nth-child(5) > p:nth-child(2) span:nth-child(2) {
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(2) span:nth-child(2) {
+	font-size: 200%;
 	font-weight: 800;
 }
 
-div:nth-child(5) > div:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(5) div:nth-child(3) {
 	box-shadow: none;
 	position: absolute;
 	right: -2%;
 	top: 59%;
 	background: var(--black);
-	height: 100px;
-	width: 110px;
+	height: 10%;
+	width: 18.3%;
 	border-radius: 10px;
 }
 
-div:nth-child(5) > p:nth-child(4) {
+main > div:nth-child(2) > section:nth-child(5) > p:nth-child(4) {
 	color: var(--black);
-	font-size: 7.5em;
+	font-size: 750%;
 	font-style: italic;
-	letter-spacing: -11px;
+	letter-spacing: -11px; /* calc */
 	margin: 20% 0 0 7%;
 }
 
-div:nth-child(5) > section:nth-child(5) {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(5) {
 	background: var(--black);
+	box-shadow: none;
 }
 
-div:nth-child(5) > section:nth-child(5) div:nth-child(1)::before {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(5) div:nth-child(1)::before {
 	content: '';
 	position: absolute;
-	height: 0.5em;
+	height: 10%;
 	width: 100%;
 	background: var(--black);
 }
 
-div:nth-child(5) > section:nth-child(5) div:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(5) div:nth-child(1) {
 	box-shadow: none;
 	position: relative;
-	height: 3.5em;
+	height: 3.5em; /* calc */
 	width: 100%;
-	margin-top: 1em;
+	margin-top: 4%;
 	background: var(--basfpurple);
 	background: linear-gradient(
 		90deg,
@@ -956,46 +904,44 @@ div:nth-child(5) > section:nth-child(5) div:nth-child(1) {
 	);
 }
 
-div:nth-child(5) > section:nth-child(5) p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(5) > section:nth-child(5) p:nth-child(2) {
 	margin-left: 7%;
-	padding-bottom: 0.2em;
+	padding-bottom: 2%;
 	color: var(--white);
 	font-size: 2.5em;
 	font-style: italic;
 }
 
-div:nth-child(5) p:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(5) p:nth-child(6) {
 	position: absolute;
 	bottom: 5%;
 	left: 7%;
 	color: var(--black);
-	font-size: 1.2em;
+	font-size: 120%;
 	font-style: italic;
 }
 
-div:nth-child(5) article:nth-child(7) {
+main > div:nth-child(2) > section:nth-child(5) article:nth-child(7) {
 	color: var(--black);
 	position: absolute;
 	bottom: 4%;
 	right: 7%;
 }
 
-div:nth-child(5) article:nth-child(7) p:nth-child(1) {
-	font-size: 0.7em;
+main > div:nth-child(2) > section:nth-child(5) article:nth-child(7) p:nth-child(1) {
+	font-size: 70%;
 	font-weight: 800;
 }
 
-div:nth-child(5) article:nth-child(7) p:nth-child(2) {
-	width: 2.2em;
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(5) article:nth-child(7) p:nth-child(2) {
+	font-size: 200%;
 	font-weight: 800;
 	letter-spacing: -2px;
-	padding-right: 3px;
 	border: 2px solid var(--black);
 }
 
-div:nth-child(5) article:nth-child(7) p:nth-child(3) {
-	font-size: 0.5em;
+main > div:nth-child(2) > section:nth-child(5) article:nth-child(7) p:nth-child(3) {
+	font-size: 50%;
 	text-align: right;
 }
 
@@ -1005,14 +951,15 @@ FUJI ARTWORK STYLES
 
 */
 
-div:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(6) {
 	grid-area: six;
 	color: var(--black);
 	background: var(--white);
 	position: relative;
+	overflow: hidden;
 }
 
-div:nth-child(6) div:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(1) {
 	background: none;
 	box-shadow: none;
 	display: flex;
@@ -1021,31 +968,31 @@ div:nth-child(6) div:nth-child(1) {
 	margin-top: 5%;
 }
 
-div:nth-child(6) div:nth-child(1) img:nth-child(1) {
-	padding-top: 1.5em;
-	padding-right: 2.5em;
-	width: 100px;
-	height: 80px;
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(1) img:nth-child(1) {
+	padding-top: 5%;
+	padding-right: 6.6%;
+	width: 16.6%;
+	height: 8%;
 }
 
-div:nth-child(6) div:nth-child(1) h2:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(1) h2:nth-child(2) {
 	padding: 0;
 	margin: 0;
-	font-size: 9em;
+	font-size: 900%;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: -10px;
+	letter-spacing: -10px; /* calc */
 	transform: scale(1.1, 1);
 }
 
-div:nth-child(6) p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(2) {
 	text-transform: uppercase;
-	font-size: 1.6em;
+	font-size: 160%;
 	margin-left: 30%;
 	margin-bottom: 5%;
 }
 
-div:nth-child(6) div:nth-child(3) {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(3) {
 	position: relative;
 	box-shadow: none;
 	background: var(--fujigrey);
@@ -1073,31 +1020,31 @@ div:nth-child(6) div:nth-child(3) {
 	margin-left: 7%;
 }
 
-div:nth-child(6) div:nth-child(3) div:nth-child(1) {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(3) div:nth-child(1) {
 	box-shadow: none;
 	position: absolute;
 	top: 20%;
 	right: -3%;
-	height: 225px;
-	width: 90px;
+	height: 40%;
+	width: 15%; 
 	clip-path: polygon(0 75%, 0 25%, 100% 0, 100% 100%);
 	background: var(--black);
 }
 
-div:nth-child(6) div:nth-child(3) p:nth-child(2) {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(3) p:nth-child(2) {
 	position: absolute;
 	bottom: -2%;
 	right: 8%;
-	font-size: 9em;
+	font-size: 900%;
 	font-style: italic;
 	font-family: none;
 	font-weight: 800;
-	letter-spacing: -10px;
+	letter-spacing: -10px; /* calc */
 	color: var(--black);
 }
 
-div:nth-child(6) div:nth-child(3) p:nth-child(3) {
-	font-size: 1.3em;
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(3) p:nth-child(3) {
+	font-size: 130%;
 	font-family: none;
 	font-style: italic;
 	font-weight: 800;
@@ -1109,79 +1056,77 @@ div:nth-child(6) div:nth-child(3) p:nth-child(3) {
 	z-index: 2;
 }
 
-div:nth-child(6) div:nth-child(3) p:nth-child(3) span {
+main > div:nth-child(2) > section:nth-child(6) div:nth-child(3) p:nth-child(3) span {
 	color: var(--fujigrey);
 }
 
-div:nth-child(6) p:nth-child(4) {
-	font-size: 5em;
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(4) {
+	font-size: 500%;
 	font-weight: 800;
-	letter-spacing: -7px;
+	letter-spacing: -7px; /* calc */
 	margin-left: 7%;
 }
 
-div:nth-child(6) p:nth-child(5) {
-	font-size: 1.3em;
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(5) {
+	font-size: 130%;
 	margin-left: 7%;
 }
 
-div:nth-child(6) p:nth-child(6) {
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(6) {
 	position: absolute;
 	bottom: 15%;
 	right: 7%;
-	font-size: 1em;
+	font-size: 100%;
 	font-weight: 800;
 	font-style: italic;
 	text-transform: uppercase;
 	margin-left: 7%;
 }
 
-div:nth-child(6) p:nth-child(6) span {
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(6) span {
 	display: block;
 	text-align: right;
-	line-height: 20px;
+	line-height: 140%;
 }
 
-div:nth-child(6) p:nth-child(6) span:nth-child(3)::before {
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(6) span:nth-child(3)::before {
 	content: '';
 	position: absolute;
 	top: 63%;
-	height: 2px;
+	height: 2px; /* calc */
 	width: 100%;
 	background: var(--black);
 }
 
-div:nth-child(6) p:nth-child(7) {
-	font-size: 1.3em;
-	margin: 1em 0 0 7%;
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(7) {
+	font-size: 130%;
+	margin: 4% 0 0 7%;
 }
 
-div:nth-child(6) p:nth-child(8) {
-	font-size: 1.7em;
+main > div:nth-child(2) > section:nth-child(6) p:nth-child(8) {
+	font-size: 170%;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: -2px;
+	letter-spacing: -2px; /* calc */
 	margin-left: 7%;
 }
 
-div:nth-child(6) article:nth-child(9) {
+main > div:nth-child(2) > section:nth-child(6) article:nth-child(9) {
 	position: absolute;
 	bottom: 3%;
 	right: 7%;
 }
 
-div:nth-child(6) article:nth-child(9) p:nth-child(1) {
-	width: 2.2em;
-	font-size: 2em;
+main > div:nth-child(2) > section:nth-child(6) article:nth-child(9) p:nth-child(1) {
+	font-size: 200%;
 	font-weight: 800;
 	letter-spacing: -2px;
-	padding-right: 3px;
 	border: 2px solid var(--black);
 }
 
-div:nth-child(6) article:nth-child(9) p:nth-child(2) {
-	font-size: 1em;
-	margin: 1em 0 0 0;
+main > div:nth-child(2) > section:nth-child(6) article:nth-child(9) p:nth-child(2) {
+	font-size: 100%;
+	margin: 15% 0 0 0;
 	text-align: right;
 }
 
@@ -1192,7 +1137,7 @@ Interaction animations
 */
 
 #Kodak:target {
-	animation: grow 3s 1s ease-in-out infinite;
+	animation: grow 3s ease-in-out infinite;
 	z-index: 2;
 }
 
@@ -1201,7 +1146,7 @@ Interaction animations
 		transform: scale(1);
 	}
 	50% {
-		transform: scale(1.2);
+		transform: scale(0.8);
 	}
 
 	100% {
@@ -1210,7 +1155,7 @@ Interaction animations
 }
 
 #Polaroid:target {
-	animation: rock 6s 1s ease-in-out infinite;
+	animation: rock 6s ease-in-out infinite;
 }
 
 @keyframes rock {
@@ -1229,7 +1174,7 @@ Interaction animations
 }
 
 #JVC:target {
-	animation: twist 6s 1s ease-in-out infinite;
+	animation: twist 6s ease-in-out infinite;
 }
 
 @keyframes twist {
@@ -1248,28 +1193,34 @@ Interaction animations
 }
 
 #PHILLIPS:target {
-	animation: rotate 3s 2s ease-in-out infinite;
+	animation: sway 2s ease-in-out alternate infinite;
 	z-index: 2;
 }
 
-@keyframes rotate {
+@keyframes sway {
 	0% {
 		transform: rotate(0deg);
 	}
+	33% {
+		transform: rotate(45deg);
+	}
+	66% {
+		transform: rotate(-45deg);
+	}
 	100% {
-		transform: rotate(360deg);
+		transform: rotate(0deg);
 	}
 }
 
 #BASF:target {
-	animation: squish 3s 2s ease-in-out infinite;
+	animation: squish 3s ease-in-out alternate infinite;
 }
 
 @keyframes squish {
 	0% {
 		transform: skew(0deg, 0deg);
 	}
-	33% {
+	50% {
 		transform: skew(30deg, 20deg);
 	}
 	66% {
@@ -1281,7 +1232,7 @@ Interaction animations
 }
 
 #FUJI:target {
-	animation: salto 6s 3s ease-in-out infinite;
+	animation: salto 6s ease-in-out infinite;
 	z-index: 2;
 }
 
@@ -1370,12 +1321,69 @@ Styles to make the page somewhat responsive
 */
 
 @media screen and (max-width: 645px) {
-	main > div:nth-child(1),
-	main > div:nth-child(2),
-	main > div:nth-child(3),
-	main > div:nth-child(4),
-	main > div:nth-child(5),
-	main > div:nth-child(6) {
-		transform: scale(0.7);
+	/* main {
+		grid-template-columns: 1fr 300px 1fr;
+		grid-template-rows: repeat(6, 500px);
+		gap: 5em 0%;
+	} */
+
+	main > div:nth-child(2) > section:nth-child(1),
+	main > div:nth-child(2) > section:nth-child(2),
+	main > div:nth-child(2) > section:nth-child(3),
+	main > div:nth-child(2) > section:nth-child(4),
+	main > div:nth-child(2) > section:nth-child(5),
+	main > div:nth-child(2) > section:nth-child(6) {
+		transform: scale(0.5);
 	}
 }
+
+@media screen and (max-width: 881px) {
+	header h1::before,
+	header h1::after {
+		left: -80vw;
+	}
+
+	header h1::after {
+		width: 190vw;
+	}
+} 
+
+@media screen and (min-width: 1400px) {
+	header h1 {
+		perspective: 3000px;
+	}
+	
+	header h1::before,
+	header h1::after {
+		left: -150vw;
+	}
+
+	header h1::before {
+		width: 300vw;
+	}
+	
+	header h1::after {
+		width: 305vw;
+	}
+}
+
+/* main {
+		padding: 3vh 0;
+		width: 100vw;
+		height: auto;
+		font-size: 1rem;
+		background: var(--stalewhite);
+		height: 100%;
+		margin: 0;
+		display: grid;
+		grid-template-columns: 1fr 600px 1fr;
+		grid-template-rows: repeat(6, 1000px);
+		gap: 5em 0%;
+		grid-template-areas:
+			'. one .'
+			'. two .'
+			'. three .'
+			'. four .'
+			'. five .'
+			'. six .';
+	} */
