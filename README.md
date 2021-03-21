@@ -2,11 +2,27 @@
 
 ## Demo link
 
-[Go to the live demo of this project](https://mbergevoet.github.io/css-to-the-rescue-2021//)
+[Go to the live demo of this project](https://mbergevoet.github.io/css-to-the-rescue-2021/)
+
+# Beoordeling
+
+## Nieuwe en toffe CSS technieken 
+* Betere CSS Grid
+* Betere position relative & absolute
+* Linear gradient background
+* Keyframes & Animations
+* Clippath
+* Transform
+* Perspective
+* Calc
+
+## Technieken die ik vaker ga gebruiken
+
+## Reflectie op CSS To The Rescue
 
 # Week 3
 
-Ik ben verder gegaan met het implementeren van de artworks op de site. Eerst had ik nog een andere aanpak dus moest ik weer opnieuw beginnen. Uiteindlijk is het me gelukt om er zes te maken. Ten slotte heb ik nog een invert mode toegevoed en animaties die de target selector gebruiken en keyframes
+Ik ben verder gegaan met het implementeren van de artworks op de site. Eerst had ik nog een andere aanpak met de elementen positioneren dus heb ik weer opnieuw moeten beginnen. Uiteindlijk is het me gelukt om er zes te maken. Ten slotte heb ik nog een invert mode toegevoed en animaties die de target selector gebruiken en keyframes
 
 ## Voortgang
 
