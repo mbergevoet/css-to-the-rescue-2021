@@ -4,6 +4,15 @@
 
 [Go to the live demo of this project](https://mbergevoet.github.io/css-to-the-rescue-2021/)
 
+## De VHS artworks
+
+<img width="200" src="https://i.imgur.com/kF4KFlX.png">
+<img width="200" src="https://i.imgur.com/2yNG6L7.png">
+<img width="200" src="https://i.imgur.com/J11TQJs.png">
+<img width="200" src="https://i.imgur.com/rSOyF4E.png">
+<img width="200" src="https://i.imgur.com/MuvBV3m.png">
+<img width="200" src="https://i.imgur.com/329gcDH.png">
+
 # Beoordeling
 
 ## Nieuwe en toffe CSS technieken 
@@ -16,9 +25,59 @@
 * Perspective
 * Calc
 
+### Betere CSS Grid
+
+Om de vhs banden in het midden van het scherm te krijgen heb ik een grid gemaakt waarbij ik dit keer gebruik heb gemaakt van de asci notatie. Die wilde ik altijd al een keer uittesten en ik weet nu ook beter hoe ik die moet gebruiken in het vervolg.
+
+### Betere position relative & absolute
+
+Ik heb veel tekst en vormen gepositioneerd met `position: realtive;` en `postion: absolute;`. Ik wist wel al een beetje hoe dit werkte maar bij deze opdracht heb ik het wel naar een ander niveau gebracht. Ik weet nu precies wanneer ik `left`, `right`, `top` & `bottom` moet gebruiken.
+
+### Linear gradient background
+
+Deze property heb ik op heel veel plekken gebruikt. Het is super handig als je vormen met meerdere kleuren wilt hebben zonder dat je honderde div elementen nodig hebt die je moet positioneren. In elke vhs band zit een gradient op één of andere manier.
+
+### Keyframes & Animations
+
+Als extraatje heb ik nog animaties teogevoed die de banden laat bewegen. Je kunt ze triggeren door in de lijst boven aan te klikken waardoor ze een de pseudoclass `:target` krijgen en ik ze individueel kan stylen.
+
+### Clippath
+
+Clipppath heb ik gebruikt op een paar specifieke plekken. Bij de Kodak band en de JVC band. Dit was om vormen uit te knippen die ook nog een achtergrond kleur of gradient hadden.
+
+### Transform
+
+Transform heb ik op veel plekken gebruikt om tekst en vormen te draaien net zoals ze staan op de echte vhs banden. Maar ik hebt het ook een aantal keer gebruikt om de aspect ratio van tekst te veranderen door de scale aan te passen.
+
+```css
+transform: rotate(-25deg);
+transform-origin: bottom left;
+
+transform: scale(2.5, 1.5);
+```
+
+### Perspective
+
+Ik gebruik perspectivee om het eerste panasonic artwork te maken. De blauwe en rode streep zijn in het echte artwork aan de ene kant dunner dan aan de andere kant. Om dit effect met CSS te maken heb ik daarvoor perspective gebruikt. Daarnaast heef ik ze ook nog een position absolute en een right om te zorgen dat ze in het midden van het scherm komen te staan.
+
 ## Technieken die ik vaker ga gebruiken
 
+## WCAG switch
+
+[WCAG guidelines](https://www.w3.org/TR/WCAG20/)
+
 ## Reflectie op CSS To The Rescue
+
+Ik vond het, om te beginnen, een interessant vak. Ik dacht dat ik al veel wist over CSS voor dat dit vak begon. Maar het heeft me
+laten zien hoeveel er daadwerkelijk mogelijk is dat ik nog niet wist zonder dat je JavaScript nodig hebt. Veel CSS trucjes en properties zijn vrij 
+situatie specifiek maar het is toch goed om ze te weten. Ik vond het ook erg leuk dat ik me creativiteit kwijt 
+kon in de opdracht ookal moest ik in het begin nog wat zoeken naar de righting die ik op wilde en hoeveel vrijheid ik daadwerkelijk had 
+om er een eigen invulling aan te geven. Dat mag nog wat duidelijker gemaakt worden als dit vak volgend jaar weer word gegeven.
+De opbouw van het vak was goed alleen ging het voor mij erg snel. Daarom heb ik het de eerste keer niet gehaald om alles in de opdracht te verwerken.
+Ik wist te laat pas wat voor concept ik nou wilde maken en tegen die tijd kostte het me te veel tijd om alle styling daar voor te doen om de deadline nog te halen.
+Maar achteraf gezien heb ik erg veel plezier gehad in het maken van de VHS banden artorks. 
+Ik heb iets gemaakt dat ik nooit gedacht had te maken met CSS. 
+Ik heb nu extra tijd genomen om het af te maken en ik ben nu erg trots op het eindresultaat. 
 
 # Week 3
 
