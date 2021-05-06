@@ -68,31 +68,31 @@ Ik gebruik perspectivee om het eerste panasonic artwork te maken. De blauwe en r
 
 ## WCAG Guidlines die toepasbaar zijn op mijn website
 
-**1.4.3 Contrast (Minimum) - Level AA**
+**1.4.3 Contrast (Minimum) - Level AA** <br>
 The visual presentation of text and images of text has a contrast ratio of at least 4.5:1
 
-**2.1.1 Keyboard - Level A**
+**2.1.1 Keyboard - Level A** <br>
 All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
 
-**2.4.6 Headings and Labels - Level AA**
+**2.4.6 Headings and Labels - Level AA** <br>
 Headings and labels describe topic or purpose.
 
-**2.4.7 Focus Visible - Level AA**
+**2.4.7 Focus Visible - Level AA** <br>
 Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.
 
-**2.5.3 Label in Name - Level A**
+**2.5.3 Label in Name - Level A** <br>
 For user interface components with labels that include text or images of text, the name contains the text that is presented visually.
 
-**3.2.1 On Focus - Level A**
+**3.2.1 On Focus - Level A** <br>
 When any user interface component receives focus, it does not initiate a change of context.
 
-**3.2.4 Consistent Identification - Level AA**
+**3.2.4 Consistent Identification - Level AA** <br>
 Components that have the same functionality within a set of Web pages are identified consistently.
 
-**3.3.2 Labels or Instructions - Level A**
+**3.3.2 Labels or Instructions - Level A** <br>
 Labels or instructions are provided when content requires user input.
 
-**4.1.1 Parsing - Level A**
+**4.1.1 Parsing - Level A** <br>
 In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
 
 
