@@ -183,6 +183,20 @@ header h2::after {
 	background: var(--panasonicred);
 }
 
+header label {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	display: flex;
+	align-items: center;
+	font-weight: 800;
+}
+
+header label input {
+	height: 16px;
+	width: 16px;
+}
+
 main {
 	background: var(--black);
 }
@@ -214,7 +228,8 @@ main > div:nth-child(1) ul:nth-child(1) li:last-child {
 	margin-bottom: 0.2em;
 }
 
-main > div:nth-child(1) ul:nth-child(1) li a {
+main > div:nth-child(1) ul:nth-child(1) li a, 
+main > div:nth-child(1) ul:nth-child(1) li p {
 	text-decoration: none;
 	color: var(--phillipsblue);
 	font-family: 'EagerScript', sans-serif;
@@ -1188,10 +1203,13 @@ Interaction animations
 		transform: perspective(2000px) rotateX(0deg);
 	}
 	25% {
-		transform: perspective(2000px) rotateX(20deg);
+		transform: perspective(2000px) rotateX(30deg);
 	}
-	50% {
-		transform: perspective(2000px) rotateX(-20deg);
+	50%{
+		transform: perspective(2000px) rotateX(0deg);
+	}
+	75% {
+		transform: perspective(2000px) rotateX(-30deg);
 	}
 	100% {
 		transform: perspective(2000px) rotateX(0deg);
@@ -1210,6 +1228,9 @@ Interaction animations
 		transform: perspective(2000px) rotateY(45deg);
 	}
 	50% {
+		transform: perspective(2000px) rotateY(0deg);
+	}
+	75% {
 		transform: perspective(2000px) rotateY(-45deg);
 	}
 	100% {
@@ -1218,7 +1239,7 @@ Interaction animations
 }
 
 #PHILLIPS:target {
-	animation: sway 2s ease-in-out alternate infinite;
+	animation: sway 5s ease-in-out alternate infinite;
 	z-index: 2;
 }
 
@@ -1257,19 +1278,25 @@ Interaction animations
 }
 
 #FUJI:target {
-	animation: salto 6s ease-in-out infinite;
+	animation: display 8s ease-in-out infinite;
 	z-index: 2;
 }
 
-@keyframes salto {
+@keyframes display {
 	0% {
 		transform: perspective(2000px) rotateY(0deg) rotateX(0deg);
 	}
+	25%{
+		transform: perspective(2000px) rotateY(45deg) rotateX(45deg);
+	}
 	50% {
-		transform: perspective(2000px) rotateY(180deg) rotateX(180deg);
+		transform: perspective(2000px) rotateY(0deg) rotateX(0deg);
+	}
+	75%{
+		transform: perspective(2000px) rotateY(-45deg) rotateX(45deg);
 	}
 	100% {
-		transform: perspective(2000px) rotateY(360deg) rotateX(360deg);
+		transform: perspective(2000px) rotateY(0deg) rotateX(0deg);
 	}
 }
 
@@ -1339,17 +1366,6 @@ Dark Theme styles
 	}
 }
 
-/* --kodakred: #000000;
---jvcred: #ffffff;
---phillips:green: #ffffff;
---basfwhite: #ffffff; */
-
-
-
-/* input[type="checkbox"]:checked ~ *{
-	--kodakred: #000000;
-} */
-
 /* 
 
 Styles to make the page somewhat responsive
@@ -1417,4 +1433,21 @@ Styles to make the page somewhat responsive
 	header h1::after {
 		width: 305vw;
 	}
+}
+
+.wcagApproved {
+	/* Contrast 4.5:1 changes */
+	--kodakred: #9D120B;
+	--jvcred: #DF5D49;
+	--phillipsyellow: #DD9222;
+	--phillipsgreen: #489948;
+	--phillipsblue: #979ED8;
+	--phillipsred:#E78373;
+	--basfbluegrey: #61778F;
+	--polaroidblue: #016E89;
+	--polaroidgreen: #676D1C;
+	--polaroidyellow: #897E06;
+	--polaroidorange: #A6450C;
+	--polaroidpink: #C30473;
+	--fujigreen: #0C8835; 
 }
