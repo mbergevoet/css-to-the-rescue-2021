@@ -62,6 +62,8 @@ Ik gebruik perspectivee om het eerste panasonic artwork te maken. De blauwe en r
 
 ## Technieken die ik vaker ga gebruiken
 
+Grid, position relative & absolute, Linear gradients en transforms zijn technieken die je in veel situaties kan gebruiken. Dat ga ik zeker ook meer doen. Ik snap ook beter hoe deze dingen werken en is het daarom ook makkelijker om ze te gaan gebruiken. Perspective, clippath en animations zijn voor wat specifiekere situaties dus ik denk dat ik die iets minder vaak zal gebruiken dan de anderen. Maar deze zijn ook erg handig.
+
 ## WCAG toggle
 
 [WCAG guidelines](https://www.w3.org/TR/WCAG20/)
@@ -99,11 +101,9 @@ In content implemented using markup languages, elements have complete start and 
 ## Reflectie op CSS To The Rescue
 
 Ik vond het, om te beginnen, een interessant vak. Ik dacht dat ik al veel wist over CSS voor dat dit vak begon. Maar het heeft me
-laten zien hoeveel er daadwerkelijk mogelijk is dat ik nog niet wist zonder dat je JavaScript nodig hebt. Veel CSS trucjes en properties zijn vrij 
-situatie specifiek maar het is toch goed om ze te weten. Ik vond het ook erg leuk dat ik me creativiteit kwijt 
-kon in de opdracht ookal moest ik in het begin nog wat zoeken naar de righting die ik op wilde en hoeveel vrijheid ik daadwerkelijk had 
+laten zien hoeveel er daadwerkelijk mogelijk is dat ik nog niet wist zonder dat je JavaScript nodig hebt. Veel CSS trucjes en properties zijn vrij situatie specifiek maar het is toch goed om ze te weten. Ik vond het ook erg leuk dat ik me creativiteit kwijt kon in de opdracht ookal moest ik in het begin nog wat zoeken naar de righting die ik op wilde en hoeveel vrijheid ik daadwerkelijk had 
 om er een eigen invulling aan te geven. Dat mag nog wat duidelijker gemaakt worden als dit vak volgend jaar weer word gegeven.
-De opbouw van het vak was goed alleen ging het voor mij erg snel. Daarom heb ik het de eerste keer niet gehaald om alles in de opdracht te verwerken.
+De opbouw van het vak was goed alleen ging het voor mij erg snel. Daarom heb ik het de eerste keer niet gehaald om alles in de opdracht te verwerken. <br>
 Ik wist te laat pas wat voor concept ik nou wilde maken en tegen die tijd kostte het me te veel tijd om alle styling daar voor te doen om de deadline nog te halen.
 Maar achteraf gezien heb ik erg veel plezier gehad in het maken van de VHS banden artorks. 
 Ik heb iets gemaakt dat ik nooit gedacht had te maken met CSS. 
