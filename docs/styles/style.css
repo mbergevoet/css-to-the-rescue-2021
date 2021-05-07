@@ -183,13 +183,22 @@ header h2::after {
 	background: var(--panasonicred);
 }
 
-header label {
+header label:nth-child(3) {
 	position: absolute;
-	bottom: 1em;
-	right: 1em;
+	bottom: 2.2em;
+	right: 2em;
 	display: flex;
 	align-items: center;
 	font-weight: 800;
+}
+
+header button:nth-child(4) {
+	position: absolute;
+	bottom: 1em;
+	right: 2em;
+	font-weight: 800;
+	border: 1px solid var(--black);
+	background: var(--white);
 }
 
 header label input {
@@ -1450,4 +1459,8 @@ Styles to make the page somewhat responsive
 	--polaroidorange: #A6450C;
 	--polaroidpink: #C30473;
 	--fujigreen: #0C8835; 
+}
+
+.rest {
+	all: unset;
 }
