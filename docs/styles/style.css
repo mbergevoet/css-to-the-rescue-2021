@@ -1333,7 +1333,7 @@ Dark Theme styles
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--black: #fff;
+		--black: rgb(148, 148, 148);
 		--trasparentblack: rgba(255, 255, 255, 0.53);
 		--panasonicred: #79d5ca;
 		--panasonicblue: #e8af76;

@@ -15,6 +15,14 @@
 
 # Beoordeling
 
+## Context
+
+Als extra context kies ik **prefers-color-scheme**. Het ontwerp zoals ik het nu voor me zie heeft een vrij kleurrijke styling. Daarom wil ik dat het niet een super groot contrast geeft als een gebruiker bijvoorbeeld darkmode heeft aanstaan op hun computer.
+
+## Ristricties
+
+En als de twee ristricties heb ik **voldoen aan Level AAA van de WCAG** en **extreme optimalisatie** gekozen. Deze kies ik omdat de anderen twee met maar twee kleuren en zonder vormen mij het wel erg onmogelijk maken om het ontwerp dat ik in mijn hoofd heb te kunnen maken. De styling kun je uit zetten voor de WCAG en je kunt ook het contrast van kleuren aanpassen zodat sommige dingen beter leesbaar zijn. Ik heb de CSS geminified om zo de bestandgrootte een stuk kleiner te maken (van 32kb naar 25kb). 
+
 ## Nieuwe en toffe CSS technieken 
 * Betere CSS Grid
 * Betere position relative & absolute
@@ -64,11 +72,18 @@ Ik gebruik perspectivee om het eerste panasonic artwork te maken. De blauwe en r
 
 Grid, position relative & absolute, Linear gradients en transforms zijn technieken die je in veel situaties kan gebruiken. Dat ga ik zeker ook meer doen. Ik snap ook beter hoe deze dingen werken en is het daarom ook makkelijker om ze te gaan gebruiken. Perspective, clippath en animations zijn voor wat specifiekere situaties dus ik denk dat ik die iets minder vaak zal gebruiken dan de anderen. Maar deze zijn ook erg handig.
 
+## Code aanpassingen voor de herkansing
+
+Ik heb te code een stuk robuster gemaakt door veel **em** eenheden om te zetten naar percentages zodat ik daar minder afhankelijk van was. Mijn hoop was ook door dat te doen dat ik de VHS artworks ook kon scalen als een geheel met percentages en dat alles dan nog goed in verhouding bleef. Helaas werkte dat niet zoals ik gehoopt had dus heb ik alsnog media queries en `trasform: scale` moeten gebruiken zodat de artworks ook mobiel er nog goed uit zien. <br>
+De header is nu ook volledig responsive. Wel met de hulp van media queries maar het werkt nu dus wel goed. <br>
+Ik heb een checkbox en een button toegevoegd. De checkbox zorgt dat het contrast van sommige kleuren verhoogd wordt omdat dat een guideline is van level AA van WCAG. En de button verwijdert alle styles tijdelijk zodat het nog beter aan sluit op de WCAG guidelines. <br>
+Verder heb ik nog een balk list toegevoegd (in de stijl van de zijkant van een VHS band) waarop je kunt klikken om de animaties te triggeren. Je hoeft nu niet meer # + de naam van de band te typen in de URL om ze te zien.
+
 ## WCAG toggle
 
 [WCAG guidelines](https://www.w3.org/TR/WCAG20/)
 
-## WCAG Guidlines die toepasbaar zijn op mijn website
+## WCAG Guidlines die van toepassing waren op mijn website
 
 **1.4.3 Contrast (Minimum) - Level AA** <br>
 The visual presentation of text and images of text has a contrast ratio of at least 4.5:1
@@ -97,6 +112,13 @@ Labels or instructions are provided when content requires user input.
 **4.1.1 Parsing - Level A** <br>
 In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.
 
+## Extreme optimalisatie
+
+Helaas is mijn CSS best veel geworden en ik kan niet al te veel weghalen zonder. Dat heb ik wel geprobeert maar veel dingen gaan dan al helemaal stuk. Daarom heb ik mijn CSS code gecompromeerd of geminified zoals ik al eerder aangaf ([bron](https://cssminifier.com/)). Dit heeft de bestandsgrootte verkleint van 32kb naar 25kb wat een 23.9% reductie is.
+
+## Prefered color scheme
+
+Als de gebruiker darkmode heeft ingesteld veranderen alle kleuren naar hun negatieve equivalent. Dit is een wat extreme veranderen maar zorgt wel dat het fijner is voor je ogen in het donker.
 
 ## Reflectie op CSS To The Rescue
 
@@ -158,15 +180,3 @@ Ik kies het **magazine artikel** in HTML om te stylen. Dit wil ik doen in een st
 <img src="https://i.imgur.com/TNZzAbp.jpg?raw=true"/>
 <img src="https://i.imgur.com/PgrjQms.jpg?raw=true"/>
 <img src="https://i.imgur.com/5v8a4Sz.jpg?raw=true"/>
-
-## Context
-
-Als extra context kies ik **prefers-color-scheme**. Het ontwerp zoals ik het nu voor me zie heeft een vrij kleurrijke styling. Daarom wil ik dat het niet een super groot contrast geeft als een gebruiker bijvoorbeeld darkmode heeft aanstaan op hun computer.
-
-## Ristricties
-
-En als de twee ristricties wil ik **voldoen aan Level AAA van de WCAG** en wil ik het ontwerp **responsive maken zonder media queries**. Deze kies ik omdat de anderen twee met maar twee kleuren en zonder vormen mij het wel erg onmogelijk maken om het ontwerp dat ik in mijn hoofd heb te kunnen maken. Het zou kunnen dat ik nog kies voor extreme optimalisatie als het te lastig is om mijn ontwerp responsive te maken zonder media queries.
-
-## CSS technieken
-
-Veel flexbox gebruik omdat ik geen media queries ga gebruiken. Verder wil ik ook dingen doen met scroll gedrag en kleine animaties.
