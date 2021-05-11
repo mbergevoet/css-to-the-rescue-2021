@@ -21,7 +21,7 @@ Als extra context kies ik **prefers-color-scheme**. Het ontwerp zoals ik het nu 
 
 ## Ristricties
 
-En als de twee ristricties heb ik **voldoen aan Level AAA van de WCAG** en **extreme optimalisatie** gekozen. Deze kies ik omdat de anderen twee met maar twee kleuren en zonder vormen mij het wel erg onmogelijk maken om het ontwerp dat ik in mijn hoofd heb te kunnen maken. De styling kun je uit zetten voor de WCAG en je kunt ook het contrast van kleuren aanpassen zodat sommige dingen beter leesbaar zijn. Ik heb de CSS geminified om zo de bestandgrootte een stuk kleiner te maken (van 32kb naar 25kb). 
+En als de twee ristricties heb ik **voldoen aan Level AAA van de WCAG** en **extreme optimalisatie** gekozen. Deze kies ik omdat de anderen twee met maar twee kleuren en zonder vormen mij het wel erg onmogelijk maken om het ontwerp dat ik in mijn hoofd heb te kunnen maken. De styling kun je uit zetten voor de WCAG en je kunt ook het contrast van kleuren aanpassen zodat sommige dingen beter leesbaar zijn. Ik heb de CSS geminified om zo de bestandgrootte een stuk kleiner te maken (van 32kb naar 24,7kb). 
 
 ## Nieuwe en toffe CSS technieken 
 * Betere CSS Grid
@@ -60,7 +60,6 @@ Transform heb ik op veel plekken gebruikt om tekst en vormen te draaien net zoal
 ```css
 transform: rotate(-25deg);
 transform-origin: bottom left;
-
 transform: scale(2.5, 1.5);
 ```
 
@@ -120,18 +119,16 @@ Helaas is mijn CSS best veel geworden (1341 regels) en ik kan niet al te veel we
 
 ## Prefered color scheme
 
-Als de gebruiker darkmode heeft ingesteld veranderen alle kleuren naar hun negatieve equivalent. Dit is een wat extreme veranderen maar zorgt wel dat het fijner is voor je ogen in het donker.
+Als de gebruiker darkmode heeft ingesteld veranderen alle kleuren naar hun negatieve equivalent. Dit is een wat extreme veranderen maar zorgt wel dat het fijner is voor je ogen in het donker. En het ziet er gewoon interessant en artsie uit :).
 
 ## Reflectie op CSS To The Rescue
 
 Ik vond het, om te beginnen, een interessant vak. Ik dacht dat ik al veel wist over CSS voor dat dit vak begon. Maar het heeft me
-laten zien hoeveel er daadwerkelijk mogelijk is dat ik nog niet wist zonder dat je JavaScript nodig hebt. Veel CSS trucjes en properties zijn vrij situatie specifiek maar het is toch goed om ze te weten. Ik vond het ook erg leuk dat ik me creativiteit kwijt kon in de opdracht ookal moest ik in het begin nog wat zoeken naar de righting die ik op wilde en hoeveel vrijheid ik daadwerkelijk had 
-om er een eigen invulling aan te geven. Dat mag nog wat duidelijker gemaakt worden als dit vak volgend jaar weer word gegeven.
-De opbouw van het vak was goed alleen ging het voor mij erg snel. Daarom heb ik het de eerste keer niet gehaald om alles in de opdracht te verwerken. <br>
+laten zien hoeveel er daadwerkelijk mogelijk is dat ik nog niet wist zonder dat je JavaScript nodig hebt. Veel CSS trucjes en properties zijn vrij situatie specifiek maar het is toch goed om ze te kennen. Ik vond het ook erg leuk dat ik mijn creativiteit kwijt kon in de opdracht ook al moest ik in het begin nog wat zoeken naar de righting die ik op wilde en hoeveel vrijheid ik daadwerkelijk had om er een eigen invulling aan te geven. Dat mag nog wat duidelijker gemaakt worden als dit vak volgend jaar weer word gegeven. <br>
+De opbouw van het vak was goed alleen ging het voor mij erg snel omdat ik nog geen goed concept had in de eerste weken. Daarom heb ik het de eerste keer niet gehaald om alles in de opdracht te verwerken. <br>
 Ik wist te laat pas wat voor concept ik nou wilde maken en tegen die tijd kostte het me te veel tijd om alle styling daar voor te doen om de deadline nog te halen.
-Maar achteraf gezien heb ik erg veel plezier gehad in het maken van de VHS banden artorks. 
-Ik heb iets gemaakt dat ik nooit gedacht had te maken met CSS. 
-Ik heb nu extra tijd genomen om het af te maken en ik ben nu erg trots op het eindresultaat. 
+Maar achteraf gezien heb ik erg veel plezier gehad in het maken van de VHS banden artorks. Het is iets geworden dat ik nooit gedacht had te maken met CSS. 
+Ik heb nu extra tijd genomen om het af te maken en ik ben nu erg trots op het eindresultaat nu de context en ristricties ook zijn toegepast.  
 
 # Week 3
 
