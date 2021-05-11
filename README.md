@@ -179,3 +179,10 @@ Ik kies het **magazine artikel** in HTML om te stylen. Dit wil ik doen in een st
 <img src="https://i.imgur.com/TNZzAbp.jpg?raw=true"/>
 <img src="https://i.imgur.com/PgrjQms.jpg?raw=true"/>
 <img src="https://i.imgur.com/5v8a4Sz.jpg?raw=true"/>
+
+# Bronnen
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CSS gradient generator](https://cssgradient.io/)
+- [CSS compressor](https://csscompressor.com/)
+- [w3schools](https://www.w3schools.com/)
