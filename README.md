@@ -85,6 +85,8 @@ Verder heb ik nog een balk list toegevoegd (in de stijl van de zijkant van een V
 
 ## WCAG Guidlines die van toepassing waren op mijn website
 
+Ik heb door de WCAG guidelines heen gelezen en hier onder staan alle guidelines waar mijn code voorheen nog niet aan voldeed.
+
 **1.4.3 Contrast (Minimum) - Level AA** <br>
 The visual presentation of text and images of text has a contrast ratio of at least 4.5:1
 
@@ -114,7 +116,7 @@ In content implemented using markup languages, elements have complete start and 
 
 ## Extreme optimalisatie
 
-Helaas is mijn CSS best veel geworden en ik kan niet al te veel weghalen zonder. Dat heb ik wel geprobeert maar veel dingen gaan dan al helemaal stuk. Daarom heb ik mijn CSS code gecompromeerd of geminified zoals ik al eerder aangaf ([bron](https://cssminifier.com/)). Dit heeft de bestandsgrootte verkleint van 32kb naar 25kb wat een 23.9% reductie is.
+Helaas is mijn CSS best veel geworden (1341 regels) en ik kan niet al te veel weghalen zonder alles stuk gaat. Ik heb wel extra animaties weggehaald en op sommige plekken `text-trasform: uppercase` weggehaald en vervangen met hoofdletters in de HTML zodat het weer CSS scheelt. Om nog meer ruimte te besparen heb ik de CSS gecompromeerd of geminified zoals ik al eerder aangaf ([bron](https://csscompressor.com/)). Dit heeft de bestandsgrootte verkleint van 32,kb naar 24,7kb, wat een 22,7% reductie is. Daarom heb ik nu twee CSS bestandjes. één leesbare versie en één gecompromeerde versie.
 
 ## Prefered color scheme
 
