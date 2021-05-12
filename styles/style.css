@@ -1212,6 +1212,12 @@ Dark Theme styles
 */
 
 @media (prefers-color-scheme: dark) {
+
+	/* html {
+		filter: invert(1) brightness(1.1) contrast(0.5);
+		
+	}	 */
+
 	:root {
 		--black: rgb(148, 148, 148);
 		--trasparentblack: rgba(255, 255, 255, 0.53);
